@@ -9,7 +9,9 @@ public class Constant {
     public static final String MAILBOX_URL = "http://mail.trainingliving.com/webmail";
     public static final String USERNAME_MAILBOX = "safe.railway@trainingliving.com";
     public static final String PASSWORD_MAILBOX = "Logigear123!!";
-    public static final String USERNAME = "thanh.nguyenm@mail.com";
+    public static final String USERNAME = "thanh.nguyen@gmail.com";
     public static final String PASSWORD = "12345678";
     public static final AccountData DEFAULT_ACCOUNT = new AccountData(USERNAME, PASSWORD);
+
+    public static final long TIMEOUT = 30;
 }
