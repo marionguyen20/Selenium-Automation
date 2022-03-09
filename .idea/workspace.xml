@@ -1,0 +1,656 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<project version="4">
+  <component name="ChangeListManager">
+    <list default="true" id="8464f5a8-aad4-4269-bf45-5f2a1d4f9ff1" name="Default Changelist" comment="" />
+    <option name="SHOW_DIALOG" value="false" />
+    <option name="HIGHLIGHT_CONFLICTS" value="true" />
+    <option name="HIGHLIGHT_NON_ACTIVE_CHANGELIST" value="false" />
+    <option name="LAST_RESOLUTION" value="IGNORE" />
+  </component>
+  <component name="FileTemplateManagerImpl">
+    <option name="RECENT_TEMPLATES">
+      <list>
+        <option value="Class" />
+      </list>
+    </option>
+  </component>
+  <component name="MavenImportPreferences">
+    <option name="importingSettings">
+      <MavenImportingSettings>
+        <option name="importAutomatically" value="true" />
+      </MavenImportingSettings>
+    </option>
+  </component>
+  <component name="ProjectId" id="25paO9TZIHv6KSyMELoRi2BBiLj" />
+  <component name="ProjectViewState">
+    <option name="hideEmptyMiddlePackages" value="true" />
+    <option name="showExcludedFiles" value="true" />
+    <option name="showLibraryContents" value="true" />
+  </component>
+  <component name="PropertiesComponent">
+    <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
+    <property name="project.structure.last.edited" value="Modules" />
+    <property name="project.structure.proportion" value="0.15" />
+    <property name="project.structure.side.proportion" value="0.2" />
+    <property name="show.migrate.to.gradle.popup" value="false" />
+  </component>
+  <component name="RecentsManager">
+    <key name="MoveFile.RECENT_KEYS">
+      <recent name="E:\LogiGear\Training\Selenium\Thanh Nguyen-6748\Executables" />
+    </key>
+  </component>
+  <component name="RunManager" selected="TestNG.RegisterTest.TC11">
+    <configuration name="TestCases.TC08" type="JUnit" factoryName="JUnit" temporary="true" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.TestCases" />
+      <option name="METHOD_NAME" value="TC08" />
+      <option name="TEST_OBJECT" value="method" />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestCases" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTestCases" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestCases.TC01" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTestCases" />
+      <option name="METHOD_NAME" value="TC01" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestCases.TC02" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTestCases" />
+      <option name="METHOD_NAME" value="TC02" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestCases.TC03" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTestCases" />
+      <option name="METHOD_NAME" value="TC03" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestCases.TC04" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTestCases" />
+      <option name="METHOD_NAME" value="TC04" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestCases.TC05" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTestCases" />
+      <option name="METHOD_NAME" value="TC05" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTestCases.TC06" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTestCases" />
+      <option name="METHOD_NAME" value="TC06" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="LoginTest.TC06" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.LoginTest" />
+      <option name="METHOD_NAME" value="TC06" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="Railway" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="" />
+      <option name="METHOD_NAME" value="" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="PACKAGE" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTest" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTestCases" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTestCases" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="CLASS" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTestCases.TC07" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTestCases" />
+      <option name="METHOD_NAME" value="TC07" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTestCases.TC08" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTestCases" />
+      <option name="METHOD_NAME" value="TC08" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest.ActivateAccount" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTest" />
+      <option name="METHOD_NAME" value="ActivateAccount" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest.TC09" type="TestNG" temporary="true" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTest" />
+      <option name="METHOD_NAME" value="TC09" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest.TC10" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTest" />
+      <option name="METHOD_NAME" value="TC10" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="RegisterTest.TC11" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.RegisterTest" />
+      <option name="METHOD_NAME" value="TC11" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <configuration name="TestCases.TC01" type="TestNG" nameIsGenerated="true">
+      <module name="ThanhNguyen-6748" />
+      <useClassPathOnly />
+      <extension name="coverage">
+        <pattern>
+          <option name="PATTERN" value="Railway.*" />
+          <option name="ENABLED" value="true" />
+        </pattern>
+      </extension>
+      <option name="SUITE_NAME" value="" />
+      <option name="PACKAGE_NAME" value="Railway" />
+      <option name="MAIN_CLASS_NAME" value="Railway.TestCases" />
+      <option name="METHOD_NAME" value="TC01" />
+      <option name="GROUP_NAME" value="" />
+      <option name="TEST_OBJECT" value="METHOD" />
+      <option name="PARAMETERS" value="" />
+      <option name="OUTPUT_DIRECTORY" value="" />
+      <option name="TEST_SEARCH_SCOPE">
+        <value defaultName="moduleWithDependencies" />
+      </option>
+      <option name="PROPERTIES_FILE" value="" />
+      <properties />
+      <listeners />
+      <method v="2">
+        <option name="Make" enabled="true" />
+      </method>
+    </configuration>
+    <recent_temporary>
+      <list>
+        <item itemvalue="TestNG.RegisterTest" />
+        <item itemvalue="TestNG.RegisterTest.TC09" />
+        <item itemvalue="TestNG.RegisterTest.ActivateAccount" />
+        <item itemvalue="TestNG.LoginTest.TC06" />
+        <item itemvalue="JUnit.TestCases.TC08" />
+      </list>
+    </recent_temporary>
+  </component>
+  <component name="SvnConfiguration">
+    <configuration />
+  </component>
+  <component name="TaskManager">
+    <task active="true" id="Default" summary="Default task">
+      <changelist id="8464f5a8-aad4-4269-bf45-5f2a1d4f9ff1" name="Default Changelist" comment="" />
+      <created>1646226446243</created>
+      <option name="number" value="Default" />
+      <option name="presentableId" value="Default" />
+      <updated>1646226446243</updated>
+    </task>
+    <servers />
+  </component>
+  <component name="WindowStateProjectService">
+    <state x="671" y="173" key="#LoginTestCases" timestamp="1646471587656">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#LoginTestCases.TC01" timestamp="1646471864110">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#LoginTestCases.TC01/0.0.1920.1080@0.0.1920.1080" timestamp="1646471864110" />
+    <state x="671" y="156" key="#LoginTestCases.TC02" timestamp="1646471531064">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#LoginTestCases.TC02/0.0.1920.1080@0.0.1920.1080" timestamp="1646471531064" />
+    <state x="671" y="156" key="#LoginTestCases.TC03" timestamp="1646471535074">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#LoginTestCases.TC03/0.0.1920.1080@0.0.1920.1080" timestamp="1646471535074" />
+    <state x="671" y="156" key="#LoginTestCases.TC04" timestamp="1646471539312">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#LoginTestCases.TC04/0.0.1920.1080@0.0.1920.1080" timestamp="1646471539312" />
+    <state x="671" y="156" key="#LoginTestCases.TC05" timestamp="1646471543617">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#LoginTestCases.TC05/0.0.1920.1080@0.0.1920.1080" timestamp="1646471543617" />
+    <state x="671" y="156" key="#LoginTestCases.TC06" timestamp="1646471547839">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#LoginTestCases.TC06/0.0.1920.1080@0.0.1920.1080" timestamp="1646471547839" />
+    <state x="671" y="173" key="#LoginTestCases/0.0.1920.1080@0.0.1920.1080" timestamp="1646471587656" />
+    <state x="671" y="155" key="#Railway" timestamp="1646586680115">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="155" key="#Railway/0.0.1920.1080@0.0.1920.1080" timestamp="1646586680115" />
+    <state x="671" y="173" key="#RegisterTest" timestamp="1646596567634">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#RegisterTest.ActivateAccount" timestamp="1646596545754">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#RegisterTest.ActivateAccount/0.0.1920.1080@0.0.1920.1080" timestamp="1646596545754" />
+    <state x="671" y="156" key="#RegisterTest.TC10" timestamp="1646652817837">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#RegisterTest.TC10/0.0.1920.1080@0.0.1920.1080" timestamp="1646652817837" />
+    <state x="671" y="156" key="#RegisterTest.TC11" timestamp="1646652814545">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#RegisterTest.TC11/0.0.1920.1080@0.0.1920.1080" timestamp="1646652814545" />
+    <state x="671" y="173" key="#RegisterTest/0.0.1920.1080@0.0.1920.1080" timestamp="1646596567634" />
+    <state x="671" y="173" key="#RegisterTestCases" timestamp="1646558428169">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#RegisterTestCases.TC07" timestamp="1646558434197">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#RegisterTestCases.TC07/0.0.1920.1080@0.0.1920.1080" timestamp="1646558434197" />
+    <state x="671" y="156" key="#RegisterTestCases.TC08" timestamp="1646471813200">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" key="#RegisterTestCases.TC08/0.0.1920.1080@0.0.1920.1080" timestamp="1646471813200" />
+    <state x="671" y="173" key="#RegisterTestCases/0.0.1920.1080@0.0.1920.1080" timestamp="1646558428169" />
+    <state x="671" y="156" width="624" height="767" key="#TestCases.TC01" timestamp="1646471357047">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="671" y="156" width="624" height="767" key="#TestCases.TC01/0.0.1920.1080@0.0.1920.1080" timestamp="1646471357047" />
+    <state x="92" y="92" width="1736" height="896" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog" timestamp="1646471412613">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="#com.intellij.execution.junit2.states.ComparisonFailureState$DiffDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1646471412613" />
+    <state x="622" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog" timestamp="1646230475526">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="622" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1646230475526" />
+    <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1646457557336">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="740" y="294" key="FileChooserDialogImpl/0.0.1920.1080@0.0.1920.1080" timestamp="1646457557336" />
+    <state width="1875" height="83" key="GridCell.Tab.0.bottom" timestamp="1646652968548">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="83" key="GridCell.Tab.0.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1646652968548" />
+    <state width="1875" height="83" key="GridCell.Tab.0.center" timestamp="1646652968548">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="83" key="GridCell.Tab.0.center/0.0.1920.1080@0.0.1920.1080" timestamp="1646652968548" />
+    <state width="1875" height="83" key="GridCell.Tab.0.left" timestamp="1646652968548">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="83" key="GridCell.Tab.0.left/0.0.1920.1080@0.0.1920.1080" timestamp="1646652968548" />
+    <state width="1875" height="83" key="GridCell.Tab.0.right" timestamp="1646652968548">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="83" key="GridCell.Tab.0.right/0.0.1920.1080@0.0.1920.1080" timestamp="1646652968548" />
+    <state width="1875" height="283" key="GridCell.Tab.1.bottom" timestamp="1646596860902">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="283" key="GridCell.Tab.1.bottom/0.0.1920.1080@0.0.1920.1080" timestamp="1646596860902" />
+    <state width="1875" height="283" key="GridCell.Tab.1.center" timestamp="1646596860902">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="283" key="GridCell.Tab.1.center/0.0.1920.1080@0.0.1920.1080" timestamp="1646596860902" />
+    <state width="1875" height="283" key="GridCell.Tab.1.left" timestamp="1646596860902">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="283" key="GridCell.Tab.1.left/0.0.1920.1080@0.0.1920.1080" timestamp="1646596860902" />
+    <state width="1875" height="283" key="GridCell.Tab.1.right" timestamp="1646596860902">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state width="1875" height="283" key="GridCell.Tab.1.right/0.0.1920.1080@0.0.1920.1080" timestamp="1646596860902" />
+    <state x="490" y="194" key="Maven.ArtifactSearchDialog" timestamp="1646457655631">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="490" y="194" key="Maven.ArtifactSearchDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1646457655631" />
+    <state x="440" y="114" key="SettingsEditor" timestamp="1646457451657">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1646457451657" />
+    <state x="92" y="92" width="1736" height="896" key="dock-window-1" timestamp="1646475028535">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="92" y="92" width="1736" height="896" key="dock-window-1/0.0.1920.1080@0.0.1920.1080" timestamp="1646475028535" />
+    <state x="342" y="146" key="new project wizard" timestamp="1646226679007">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="342" y="146" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1646226679007" />
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1646651963174">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="623" y="235" width="672" height="678" key="search.everywhere.popup/0.0.1920.1080@0.0.1920.1080" timestamp="1646651963174" />
+  </component>
+</project>
