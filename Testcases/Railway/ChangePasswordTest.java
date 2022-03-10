@@ -2,7 +2,6 @@ package Railway;
 
 public class ChangePasswordTest extends BaseTest {
     
-    HomePage homePage = new HomePage ();
     AccountData accountData;
 
     @BeforeMethod
@@ -26,16 +25,17 @@ public class ChangePasswordTest extends BaseTest {
                 .changePass(accountData.getPassword(), newPass, cfPass);
 
         String expectedTitle = "Change password";
-        String expectedFormErrorMsg = "Password change failed. Please correct the errors and try again.";
-        String expectedFieldErrorMsg = "";
+        String expectedPageErrorMsg = "Password change failed. Please correct the errors and try again.";
+        String expectedCfPassErrorMsg = "The password confirmation does not match the new password.";
 
-        String actualTitle = changePasswordPage.getPageTitle();
-        String actualFormErrorMsg = changePasswordPage.getFormErrorMsg();
-        String actualFieldErrorMsg = changePasswordPage.getFieldErrorMsg();
+        Assert.assertEquals(changePasswordPage.getPageTitle(), expectedTitle, "Title is not match");
+        Assert.assertEquals(changePasswordPage.getPageErrorMessage(), expectedPageErrorMsg, "Page error message is not match");
+        Assert.assertEquals(changePasswordPage.getFieldErrorMsg("confirmPassword"), expectedCfPassErrorMsg, "Confirm Password field error message is not match");
+    }
 
-        Assert.assertEquals(actualTitle, expectedTitle, "Title is not match");
-        Assert.assertEquals(actualFormErrorMsg, expectedFormErrorMsg, "Form error message is not match");
-        Assert.assertEquals(actualFieldErrorMsg, expectedFieldErrorMsg, "Field error message is not match");
+    @Test(description = "Errors display when password reset token is blank")
+    public void TC12 () {
+        
     }
 
 

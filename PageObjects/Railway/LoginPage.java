@@ -10,7 +10,6 @@ public class LoginPage extends GeneralPage {
     private final By _txtUsername = By.id("username");
     private final By _txtPassword = By.id("password");
     private final By _btnLogin = By.xpath("//input[@value ='login']");
-    private final By _lblLoginErrorMsg = By.xpath("//div[@id='content']//p[@class = 'message error LoginForm']");
 
     //Elements
     public WebElement getTxtUsername () {
@@ -21,9 +20,6 @@ public class LoginPage extends GeneralPage {
     }
     public WebElement getBtnLogin() {
         return Constant.WEBDRIVER.findElement(_btnLogin);
-    }
-    public WebElement getLblLoginErrorMsg () {
-        return Constant.WEBDRIVER.findElement(_lblLoginErrorMsg);
     }
 
     //Methods
@@ -43,9 +39,6 @@ public class LoginPage extends GeneralPage {
     public LoginPage loginFail(String username, String password) {
         this.submitLoginForm(username, password);
         return this;
-    }
-    public String getLoginErrorMsg () {
-        return this.getLblLoginErrorMsg().getText();
     }
     public LoginPage repeatLoginFailNTimes (int n, String username, String password) {
         for (int i = 0; i < n; i++) {

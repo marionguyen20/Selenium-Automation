@@ -8,6 +8,8 @@ import org.testng.annotations.BeforeMethod;
 
 public class BaseTest {
 
+    HomePage homePage = new HomePage ();
+
     @BeforeMethod
     public void setUp () {
         System.setProperty("webdriver.chrome.driver", Utilities.getProjectPath() + "\\Executables\\chromedriver.exe" );
@@ -22,7 +24,7 @@ public class BaseTest {
 
     public void createAndActivateAccount (AccountData accountData) {
         //Create new account
-        new HomePage()
+        homePage
             .open()
             .gotoRegisterPage()
             .createAccount(accountData);

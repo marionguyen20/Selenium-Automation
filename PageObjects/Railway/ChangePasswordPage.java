@@ -11,8 +11,8 @@ public class ChangePasswordPage extends GeneralPage {
     private final By newPassTxt = By.id("newPassword");
     private final By confirmPassTxt = By.id("confirmPassword");
     private final By changePassBtn = By.xpath("//input[@type = 'submit'][@value = 'Change Password']");
-    private final By lblFormErrorMsg = By.xpath("//div[@id='content']//p[@class = 'message error']");
     private final By lblFieldErrorMsg = By.xpath("//label[@class='validation-error']");
+    private final String fieldEerrorTemplate = "//form[@id = 'ChangePW']//label[@for = '%s'][@class='validation-error']";
 
     //Elements
     protected WebElement getCurrentPassTxt () {
@@ -27,11 +27,8 @@ public class ChangePasswordPage extends GeneralPage {
     protected WebElement getChangePassBtn () {
         return Constant.WEBDRIVER.findElement(changePassBtn);
     }
-    protected WebElement getLblFormErrorMsg () {
-        return Constant.WEBDRIVER.findElement(lblFormErrorMsg);
-    }
-    protected WebElement getLblFieldErrorMsg () {
-        return Constant.WEBDRIVER.findElement(lblFieldErrorMsg);
+    public WebElement getLblFieldErrorMsg (String field) {
+        return Constant.WEBDRIVER.findElement(By.xpath(String.format(fieldEerrorTemplate, field)));
     }
 
     //Methods
@@ -45,10 +42,7 @@ public class ChangePasswordPage extends GeneralPage {
         submitChangePassForm(currentPass, newPass, cfPass);
         return this;
     }
-    protected String getFormErrorMsg () {
-        return this.getLblErrorMsg().getText().trim();
-    }
-    protected String getFieldErrorMsg () {
-        return this.getLblFieldErrorMsg().getText().trim();
+    public String getFieldErrorMsg (String field) {
+        return this.getLblFieldErrorMsg(field).getText().trim();
     }
 }

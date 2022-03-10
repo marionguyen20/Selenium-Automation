@@ -14,7 +14,6 @@ public class RegisterPage extends GeneralPage {
     private final By _txtCfPassword = By.id("confirmPassword");
     private final By _pid = By.id("pid");
     private final By _btnRegister = By.xpath("//p[@class = 'form-actions']//input[@value='Register']");
-    private final By _lblErrorMsg = By.xpath("//div[@id='page']//p[@class='message error']");
     private final String _errorTemplate = "//form[@id = 'RegisterForm']//label[@for = '%s'][@class='validation-error']";
 
     //Elements
@@ -33,9 +32,6 @@ public class RegisterPage extends GeneralPage {
     public WebElement getBtnRegister () {
         return Constant.WEBDRIVER.findElement(_btnRegister);
     }
-    public WebElement getLblErrorMsg () {
-        return Constant.WEBDRIVER.findElement(_lblErrorMsg);
-    }
     public WebElement getLblFieldErrorMsg (String field) {
         return Constant.WEBDRIVER.findElement(By.xpath(String.format(_errorTemplate, field)));
     }
@@ -50,9 +46,6 @@ public class RegisterPage extends GeneralPage {
     public RegisterPage register (AccountData accountData) {
         submitRegisterForm(accountData.getEmail(), accountData.getPassword(), accountData.getPid());
         return this;
-    }
-    public String getErrorMsg () {
-        return this.getLblErrorMsg().getText();
     }
     public String getFieldErrorMsg (String field) {
         return this.getLblFieldErrorMsg(field).getText();

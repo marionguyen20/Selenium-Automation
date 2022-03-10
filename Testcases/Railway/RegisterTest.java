@@ -9,7 +9,6 @@ import org.testng.annotations.Test;
 
 public class RegisterTest extends BaseTest {
 
-    HomePage homePage = new HomePage();
     AccountData accountData;
     RegisterPage registerPage;
 
@@ -21,31 +20,25 @@ public class RegisterTest extends BaseTest {
                 .gotoRegisterPage()
                 .createAccount(accountData);
 
-        String actualMsg = registerPage.getPageTitle();
-        String expectedMsg = "Thank you for registering your account";
-        Assert.assertEquals(actualMsg, expectedMsg, "Title is not match");
+        String expectedTitle = "Thank you for registering your account";
+        Assert.assertEquals(registerPage.getPageTitle(), expectedTitle, "Title is not match");
     }
-
 
     @Test(description = "User can't create account while password and PID fields are empty")
     public void TC11 () {
-        AccountData accountData1 = new AccountData(Utilities.generateEmail(), "","");
+        accountData = new AccountData(Utilities.generateEmail(), "","");
 
         registerPage = homePage
                 .open()
                 .gotoRegisterPage()
-                .register(accountData1);
-
-        String actualErrorMsg = registerPage.getErrorMsg();
-        String actualPassErrorMsg = registerPage.getFieldErrorMsg("password");
-        String actualPidErrorMsg = registerPage.getFieldErrorMsg("pid");
+                .register(accountData);
 
         String expectedErrorMsg = "There're errors in the form. Please correct the errors and try again.";
         String expectedPassErrorMsg = "Invalid password length";
         String expectedPidErrorMsg = "Invalid ID length";
 
-        Assert.assertEquals(actualErrorMsg, expectedErrorMsg, "Error Message is not match");
-        Assert.assertEquals(actualPassErrorMsg, expectedPassErrorMsg, "Error Password is not match");
-        Assert.assertEquals(actualPidErrorMsg, expectedPidErrorMsg, "Error Pid is not match");
+        Assert.assertEquals(registerPage.getPageErrorMessage(), expectedErrorMsg, "Error Message is not match");
+        Assert.assertEquals(registerPage.getFieldErrorMsg("password"), expectedPassErrorMsg, "Error Password is not match");
+        Assert.assertEquals(registerPage.getFieldErrorMsg("pid"), expectedPidErrorMsg, "Error Pid is not match");
     }
 }

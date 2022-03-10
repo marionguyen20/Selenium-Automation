@@ -14,6 +14,7 @@ public class GeneralPage {
     //Locators
     private final String menuTemplate = "//div[@id = 'menu']//a[span[text() ='%s']]";
     private final By lblWelcomeMessage = By.xpath("//div[@class= 'account']//strong[contains(text(), 'Welcome')]");
+    private final By lblPageErrorMessage = By.xpath("//div[@id = 'content']//p[contains(@class, 'message error')]");
     private final By hPageTitle = By.xpath("//div[@id = 'content']//h1");
 
     //Elements
@@ -23,6 +24,9 @@ public class GeneralPage {
     protected WebElement getLblWelcomeMessage () {
         return Constant.WEBDRIVER.findElement(lblWelcomeMessage);
     }
+    protected WebElement getLblPageErrorMessage () {
+        return Constant.WEBDRIVER.findElement(lblPageErrorMessage);
+    }
     protected WebElement getHPageTitle () {
         return Constant.WEBDRIVER.findElement(hPageTitle);
     }
@@ -30,6 +34,9 @@ public class GeneralPage {
     //Methods
     public String getWelcomeMessage () {
         return this.getLblWelcomeMessage().getText();
+    }
+    public String getPageErrorMessage () {
+        return this.getLblPageErrorMessage().getText().trim();
     }
     protected boolean isDisplayed (WebElement element) {
         try {

@@ -2,7 +2,6 @@ package Railway;
 
 public class RegisterActivatedAccountTest extends BaseTest {
     
-    HomePage homePage = new HomePage ();
     AccountData accountData;
 
     @BeforeMethod
@@ -18,10 +17,8 @@ public class RegisterActivatedAccountTest extends BaseTest {
                 .open()
                 .gotoRegisterPage()
                 .register(accountData);
-
-        String actualErrorMsg = registerPage.getErrorMsg();
-        String expectedErrorMsg = "This email address is already in use.";
         
-        Assert.assertEquals(actualErrorMsg, expectedErrorMsg, "Error Message is not match");
+        String expectedErrorMsg = "This email address is already in use.";
+        Assert.assertEquals(registerPage.getPageErrorMessage(), expectedErrorMsg, "Error Message is not match");
     }
 }
