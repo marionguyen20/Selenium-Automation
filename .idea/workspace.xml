@@ -2,19 +2,10 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8464f5a8-aad4-4269-bf45-5f2a1d4f9ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/.idea/vcs.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/Testcases/Railway/BookTicketTest.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Common/Utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Utilities/Utilities.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObjects/MailBox/MailBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/MailBox/MailBoxPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/GeneralPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/GeneralPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/LoginPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/RegisterPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testcases/Railway/BaseTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/BaseTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/BookTicketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/BookTicketPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/Testcases/Railway/ChangePasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/ChangePasswordTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testcases/Railway/LoginTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/LoginTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testcases/Railway/LoginUnactivatedAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/LoginUnactivatedAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testcases/Railway/RegisterActivatedAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/RegisterActivatedAccountTest.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testcases/Railway/RegisterTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/RegisterTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -540,6 +531,14 @@
       <option name="presentableId" value="Default" />
       <updated>1646226446243</updated>
     </task>
+    <task id="LOCAL-00001" summary="Update TCs">
+      <created>1647310734871</created>
+      <option name="number" value="00001" />
+      <option name="presentableId" value="LOCAL-00001" />
+      <option name="project" value="LOCAL" />
+      <updated>1647310734871</updated>
+    </task>
+    <option name="localTasksCounter" value="2" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -554,6 +553,10 @@
         </entry>
       </map>
     </option>
+  </component>
+  <component name="VcsManagerConfiguration">
+    <MESSAGE value="Update TCs" />
+    <option name="LAST_COMMIT_MESSAGE" value="Update TCs" />
   </component>
   <component name="WindowStateProjectService">
     <state x="671" y="173" key="#LoginTestCases" timestamp="1646471587656">
@@ -628,6 +631,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="622" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1646230475526" />
+    <state x="573" y="46" key="CommitChangelistDialog2" timestamp="1647310732361">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="573" y="46" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1647310732361" />
     <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1646457557336">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>

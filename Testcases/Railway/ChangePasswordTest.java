@@ -1,7 +1,6 @@
 package Railway;
 
 import Constant.Constant;
-import MailBox.LoginMailBoxPage;
 import Utilities.Utilities;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
@@ -72,10 +71,5 @@ public class ChangePasswordTest extends BaseTest {
         Assert.assertEquals(loginPage.getPageErrorMessage(), "Could not reset password. Please correct the errors and try again.");
         Assert.assertEquals(loginPage.getFieldErrorMsg("confirmPassword"),"The password confirmation did not match the new password.");
     }
-
-
-
-
-
 
 }
