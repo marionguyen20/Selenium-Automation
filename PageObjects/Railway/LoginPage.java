@@ -1,33 +1,39 @@
 package Railway;
 
 import Constant.Constant;
+import MailBox.LoginMailBoxPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 //Class encapsulate the Login Page
 public class LoginPage extends GeneralPage {
     //Locators
-    private final By _txtUsername = By.id("username");
-    private final By _txtPassword = By.id("password");
-    private final By _btnLogin = By.xpath("//input[@value ='login']");
+
+    private final By _linkForgetPass = By.xpath("//div[@id='content']//a[contains(text(), 'Forgot Password page')]");
+    private final By _titlePageChangeForm = By.xpath("//div[@id='content']//form//legend");
+
 
     //Elements
-    public WebElement getTxtUsername () {
-        return Constant.WEBDRIVER.findElement(_txtUsername);
+    public WebElement getTxtElement (String txtName) {
+        return Constant.WEBDRIVER.findElement(By.id(txtName));
     }
-    public WebElement getTxtPassword () {
-        return Constant.WEBDRIVER.findElement(_txtPassword);
+    public WebElement getBtnElement (String btnName) {
+        return Constant.WEBDRIVER.findElement(By.xpath(String.format("//input[@value ='%s']", btnName)));
     }
-    public WebElement getBtnLogin() {
-        return Constant.WEBDRIVER.findElement(_btnLogin);
+    public WebElement getLinkForgetPass () {
+        return Constant.WEBDRIVER.findElement(_linkForgetPass);
     }
+    public WebElement getPageChangeForm () {
+        return Constant.WEBDRIVER.findElement(_titlePageChangeForm);
+    }
+
 
     //Methods
     //Fill information
     protected void submitLoginForm (String username, String password) {
-        enter(this.getTxtUsername(), username);
-        enter(this.getTxtPassword(), password);
-        this.getBtnLogin().click();
+        enter(this.getTxtElement("username"), username);
+        enter(this.getTxtElement("password"), password);
+        this.getBtnElement("login").click();
     }
     //Login Method return Homepage
     public HomePage loginSucessToHomePage(AccountData accountData) {
@@ -44,6 +50,33 @@ public class LoginPage extends GeneralPage {
         for (int i = 0; i < n; i++) {
             this.loginFail(username, password);
         }
+        return this;
+    }
+    public LoginPage forgotPassword () {
+        this.getLinkForgetPass().click();
+        return this;
+    }
+    public LoginMailBoxPage sendInstruction (String email) {
+        enter(this.getTxtElement("email"), email);
+        this.getBtnElement("Send Instructions").click();
+        return new LoginMailBoxPage();
+    }
+    public boolean checkPageChangeFormDisplayed () {
+        return this.getPageChangeForm().isDisplayed();
+    }
+    public void fillPageChangeForm (String newPass, String CfPass) {
+        enter(this.getTxtElement("newPassword"), newPass);
+        enter(this.getTxtElement("confirmPassword"), CfPass);
+    }
+    public LoginPage submitPageChangeFormNoToken (String newPass, String CfPass) {
+        fillPageChangeForm(newPass, CfPass);
+        this.getTxtElement("resetToken").clear();
+        this.getBtnElement("Send Instructions").submit();
+        return this;
+    }
+    public LoginPage submitPageChangeForm (String newPass, String CfPass) {
+        fillPageChangeForm(newPass, CfPass);
+        this.getBtnElement("Send Instructions").submit();
         return this;
     }
 

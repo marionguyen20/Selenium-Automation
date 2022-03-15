@@ -1,9 +1,14 @@
 package MailBox;
 
 import Constant.Constant;
+import Railway.LoginPage;
 import Railway.RegisterPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 public class MailBoxPage {
 
@@ -16,7 +21,7 @@ public class MailBoxPage {
     //Elements
     protected WebElement findElement (By by) {
         WebDriverWait wdw = new WebDriverWait(Constant.WEBDRIVER, Duration.ofSeconds(Constant.TIMEOUT));
-        wdw.until(expectedConditions.visibilityOfElementLocated(by));
+        return wdw.until(ExpectedConditions.visibilityOfElementLocated(by));
     }
     protected WebElement getConfirmMail (String email) {
         return findElement(By.xpath(String.format(confirmTemplate, email)));
@@ -38,8 +43,16 @@ public class MailBoxPage {
     public void activateAccount (String email) throws InterruptedException {
         this.getConfirmMail(email).click();
         Constant.WEBDRIVER.switchTo().frame("messagecontframe");
-        this.getEmailSubject();
+        this.getEmailSubject(email);
         this.getActivateLink().click();
         Thread.sleep(3000);
+    }
+    public LoginPage resetPassword (String email) throws InterruptedException {
+        this.getResetMail(email).click();
+        Constant.WEBDRIVER.switchTo().frame("messagecontframe");
+        this.getEmailSubject(email);
+        this.getActivateLink().click();
+        Thread.sleep(3000);
+        return new LoginPage();
     }
 }

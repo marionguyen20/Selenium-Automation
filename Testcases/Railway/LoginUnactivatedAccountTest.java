@@ -1,5 +1,9 @@
 package Railway;
 
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 public class LoginUnactivatedAccountTest extends BaseTest {
     
     AccountData accountData;
@@ -10,7 +14,7 @@ public class LoginUnactivatedAccountTest extends BaseTest {
         RegisterPage registerPage = homePage
                 .open()
                 .gotoRegisterPage()
-                .createAccount(accountData);
+                .register(accountData);
     }
 
     @Test(description = "User can't login with an account hasn't been activated")

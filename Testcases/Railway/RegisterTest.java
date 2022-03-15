@@ -1,8 +1,5 @@
 package Railway;
 
-import Constant.Constant;
-import MailBox.LoginMailBoxPage;
-import MailBox.MailBoxPage;
 import Utilities.Utilities;
 import org.testng.Assert;
 import org.testng.annotations.Test;
@@ -18,7 +15,7 @@ public class RegisterTest extends BaseTest {
         registerPage = homePage
                 .open()
                 .gotoRegisterPage()
-                .createAccount(accountData);
+                .register(accountData);
 
         String expectedTitle = "Thank you for registering your account";
         Assert.assertEquals(registerPage.getPageTitle(), expectedTitle, "Title is not match");

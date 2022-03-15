@@ -14,40 +14,40 @@ public class RegisterPage extends GeneralPage {
     private final By _txtCfPassword = By.id("confirmPassword");
     private final By _pid = By.id("pid");
     private final By _btnRegister = By.xpath("//p[@class = 'form-actions']//input[@value='Register']");
-    private final String _errorTemplate = "//form[@id = 'RegisterForm']//label[@for = '%s'][@class='validation-error']";
 
     //Elements
-    public WebElement getTxtEmail () {
+    public WebElement getTxtEmail() {
         return Constant.WEBDRIVER.findElement(_txtEmail);
     }
-    public WebElement getTxtPassword () {
+
+    public WebElement getTxtPassword() {
         return Constant.WEBDRIVER.findElement(_txtPassword);
     }
-    public WebElement getTxtCfPassword () {
+
+    public WebElement getTxtCfPassword() {
         return Constant.WEBDRIVER.findElement(_txtCfPassword);
     }
-    public WebElement getPid () {
+
+    public WebElement getPid() {
         return Constant.WEBDRIVER.findElement(_pid);
     }
-    public WebElement getBtnRegister () {
+
+    public WebElement getBtnRegister() {
         return Constant.WEBDRIVER.findElement(_btnRegister);
     }
-    public WebElement getLblFieldErrorMsg (String field) {
-        return Constant.WEBDRIVER.findElement(By.xpath(String.format(_errorTemplate, field)));
-    }
+
     //Methods
-    public void submitRegisterForm (String email, String password, String pid) {
+    public void submitRegisterForm(String email, String password, String pid) {
         enter(this.getTxtEmail(), email);
         enter(this.getTxtPassword(), password);
         enter(this.getTxtCfPassword(), password);
         enter(this.getPid(), pid);
         this.getBtnRegister().submit();
     }
-    public RegisterPage register (AccountData accountData) {
+
+    public RegisterPage register(AccountData accountData) {
         submitRegisterForm(accountData.getEmail(), accountData.getPassword(), accountData.getPid());
         return this;
     }
-    public String getFieldErrorMsg (String field) {
-        return this.getLblFieldErrorMsg(field).getText();
-    }
 }
+

@@ -13,6 +13,7 @@ public class GeneralPage {
 
     //Locators
     private final String menuTemplate = "//div[@id = 'menu']//a[span[text() ='%s']]";
+    private final String _errorTemplate = "label[@for = '%s'][@class='validation-error']";
     private final By lblWelcomeMessage = By.xpath("//div[@class= 'account']//strong[contains(text(), 'Welcome')]");
     private final By lblPageErrorMessage = By.xpath("//div[@id = 'content']//p[contains(@class, 'message error')]");
     private final By hPageTitle = By.xpath("//div[@id = 'content']//h1");
@@ -20,6 +21,9 @@ public class GeneralPage {
     //Elements
     protected WebElement getTab (String tabName) {
         return Constant.WEBDRIVER.findElement(By.xpath(String.format(menuTemplate, tabName)));
+    }
+    protected WebElement getLblFieldErrorMsg (String field) {
+        return Constant.WEBDRIVER.findElement(By.xpath(String.format(_errorTemplate, field)));
     }
     protected WebElement getLblWelcomeMessage () {
         return Constant.WEBDRIVER.findElement(lblWelcomeMessage);
@@ -89,5 +93,9 @@ public class GeneralPage {
         this.getTab("Log out").click();
         return new HomePage();
     }
-
+    public String getFieldErrorMsg (String field) {
+        return this.getLblFieldErrorMsg(field).getText();
+    }
 }
+
+

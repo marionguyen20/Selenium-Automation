@@ -96,7 +96,7 @@ public class LoginTest extends BaseTest {
                 .logout();
 
         String expectedTitle = "Welcome to Safe Railway";
-        Assert.assertEquals(omePage.getPageTitle(), expectedTitle, "Title is not match");
+        Assert.assertEquals(homePage.getPageTitle(), expectedTitle, "Title is not match");
         Assert.assertTrue(homePage.checkLogout());
     }
 }

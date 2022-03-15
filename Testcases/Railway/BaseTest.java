@@ -1,6 +1,8 @@
 package Railway;
 
 import Constant.Constant;
+import MailBox.LoginMailBoxPage;
+import MailBox.MailBoxPage;
 import Utilities.Utilities;
 import org.openqa.selenium.chrome.ChromeDriver;
 import org.testng.annotations.AfterMethod;
@@ -22,12 +24,12 @@ public class BaseTest {
         Constant.WEBDRIVER.quit();
     }
 
-    public void createAndActivateAccount (AccountData accountData) {
+    public void createAndActivateAccount (AccountData accountData) throws InterruptedException {
         //Create new account
         homePage
             .open()
             .gotoRegisterPage()
-            .createAccount(accountData);
+            .register(accountData);
 
         //Activate Account
         LoginMailBoxPage loginMailBoxPage = new LoginMailBoxPage ();

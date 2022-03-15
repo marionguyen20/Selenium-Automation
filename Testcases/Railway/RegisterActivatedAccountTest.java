@@ -1,11 +1,15 @@
 package Railway;
 
+import org.testng.Assert;
+import org.testng.annotations.BeforeMethod;
+import org.testng.annotations.Test;
+
 public class RegisterActivatedAccountTest extends BaseTest {
     
     AccountData accountData;
 
     @BeforeMethod
-    public void createAccount () {
+    public void createAccount () throws InterruptedException {
         //Create new Account
         accountData = new AccountData ();
         createAndActivateAccount(accountData);

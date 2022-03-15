@@ -31,6 +31,13 @@ public class Utilities {
         String generateString = RandomStringUtils.randomAlphabetic(8);
         return generateString + len;
     }
+    public static void moveToCurrentWindow () {
+        String originalWindow = Constant.WEBDRIVER.getWindowHandle();
+        Set handles = Constant.WEBDRIVER.getWindowHandles();
+        handles.remove(originalWindow);
+        String nextWindow = String.valueOf(handles.iterator().next());
+        Constant.WEBDRIVER.switchTo().window(nextWindow);
+    }
     public static void closeWindow () {
         String originalWindow = Constant.WEBDRIVER.getWindowHandle();
         Set handles = Constant.WEBDRIVER.getWindowHandles();
@@ -40,4 +47,5 @@ public class Utilities {
         Constant.WEBDRIVER.close();
         Constant.WEBDRIVER.switchTo().window(originalWindow);
     }
+
 }
