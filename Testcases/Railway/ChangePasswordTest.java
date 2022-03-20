@@ -37,7 +37,7 @@ public class ChangePasswordTest extends BaseTest {
 
         Assert.assertEquals(changePasswordPage.getPageTitle(), expectedTitle, "Title is not match");
         Assert.assertEquals(changePasswordPage.getPageErrorMessage(), expectedPageErrorMsg, "Page error message is not match");
-        Assert.assertEquals(changePasswordPage.getFieldErrorMsg("confirmPassword"), expectedCfPassErrorMsg, "Confirm Password field error message is not match");
+        Assert.assertEquals(changePasswordPage.getConfirmPassFieldError(), expectedCfPassErrorMsg, "Confirm Password field error message is not match");
     }
     public LoginPage resetPassword () throws InterruptedException {
         loginPage = homePage
@@ -59,7 +59,7 @@ public class ChangePasswordTest extends BaseTest {
         loginPage.submitPageChangeFormNoToken(password, password);
 
         Assert.assertEquals(loginPage.getPageErrorMessage(), "The password reset token is incorrect or may be expired. Visit the forgot password page to generate a new one.");
-        Assert.assertEquals(loginPage.getFieldErrorMsg("resetToken"), "The password reset token is invalid.");
+        Assert.assertEquals(loginPage.getResetTokenFieldError(), "The password reset token is invalid.");
     }
     @Test(description = "Errors display if password and confirm password don't match when resetting password")
     public void TC13 () throws InterruptedException {
@@ -69,7 +69,7 @@ public class ChangePasswordTest extends BaseTest {
         loginPage.submitPageChangeForm(Utilities.generatePassword(), Utilities.generatePassword());
 
         Assert.assertEquals(loginPage.getPageErrorMessage(), "Could not reset password. Please correct the errors and try again.");
-        Assert.assertEquals(loginPage.getFieldErrorMsg("confirmPassword"),"The password confirmation did not match the new password.");
+        Assert.assertEquals(loginPage.getConfirmPassFieldError(),"The password confirmation did not match the new password.");
     }
 
 }

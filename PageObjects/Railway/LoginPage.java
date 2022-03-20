@@ -14,26 +14,34 @@ public class LoginPage extends GeneralPage {
 
 
     //Elements
-    public WebElement getTxtElement (String txtName) {
-        return Constant.WEBDRIVER.findElement(By.id(txtName));
-    }
-    public WebElement getBtnElement (String btnName) {
-        return Constant.WEBDRIVER.findElement(By.xpath(String.format("//input[@value ='%s']", btnName)));
-    }
     public WebElement getLinkForgetPass () {
         return Constant.WEBDRIVER.findElement(_linkForgetPass);
     }
     public WebElement getPageChangeForm () {
         return Constant.WEBDRIVER.findElement(_titlePageChangeForm);
     }
-
+    protected WebElement getUsernameTxt () {
+        return getTxtElement("username");
+    }
+    protected WebElement getResetToken () {
+        return getTxtElement("resetToken");
+    }
+    protected WebElement getLoginBtn () {
+        return getBtnElement("login");
+    }
+    protected WebElement getSendInstructionBtn () {
+        return getBtnElement("Send Instructions");
+    }
+    protected WebElement getResetTokenFieldError () {
+        return getFieldErrorMsg("resetToken")
+    }
 
     //Methods
     //Fill information
     protected void submitLoginForm (String username, String password) {
-        enter(this.getTxtElement("username"), username);
-        enter(this.getTxtElement("password"), password);
-        this.getBtnElement("login").click();
+        enter(this.getUsernameTxt(), username);
+        enter(this.getPasswordTxt(), password);
+        this.getLoginBtn().click();
     }
     //Login Method return Homepage
     public HomePage loginSucessToHomePage(AccountData accountData) {
@@ -57,26 +65,26 @@ public class LoginPage extends GeneralPage {
         return this;
     }
     public LoginMailBoxPage sendInstruction (String email) {
-        enter(this.getTxtElement("email"), email);
-        this.getBtnElement("Send Instructions").click();
+        enter(getEmailTxt(), email);
+        getSendInstructionBtn().click();
         return new LoginMailBoxPage();
     }
     public boolean checkPageChangeFormDisplayed () {
         return this.getPageChangeForm().isDisplayed();
     }
     public void fillPageChangeForm (String newPass, String CfPass) {
-        enter(this.getTxtElement("newPassword"), newPass);
-        enter(this.getTxtElement("confirmPassword"), CfPass);
+        enter(getNewPasswordTxt(), newPass);
+        enter(getConfirmPasswordTxt(), CfPass);
     }
     public LoginPage submitPageChangeFormNoToken (String newPass, String CfPass) {
         fillPageChangeForm(newPass, CfPass);
-        this.getTxtElement("resetToken").clear();
-        this.getBtnElement("Send Instructions").submit();
+        getResetToken().clear();
+        getSendInstructionBtn().submit();
         return this;
     }
     public LoginPage submitPageChangeForm (String newPass, String CfPass) {
         fillPageChangeForm(newPass, CfPass);
-        this.getBtnElement("Send Instructions").submit();
+        getSendInstructionBtn().submit();
         return this;
     }
 

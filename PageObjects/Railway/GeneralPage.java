@@ -25,6 +25,9 @@ public class GeneralPage {
     protected WebElement getLblFieldErrorMsg (String field) {
         return Constant.WEBDRIVER.findElement(By.xpath(String.format(_errorTemplate, field)));
     }
+    protected WebElement getConfirmPassFieldError () {
+        return getFieldErrorMsg("confirmPassword");
+    }
     protected WebElement getLblWelcomeMessage () {
         return Constant.WEBDRIVER.findElement(lblWelcomeMessage);
     }
@@ -34,6 +37,25 @@ public class GeneralPage {
     protected WebElement getHPageTitle () {
         return Constant.WEBDRIVER.findElement(hPageTitle);
     }
+        public WebElement getTxtElement (String txtName) {
+        return Constant.WEBDRIVER.findElement(By.id(txtName));
+    }
+    protected WebElement getEmailTxt () {
+        return getTxtElement("email");
+    }
+    protected WebElement getPasswordTxt () {
+        return getTxtElement("password");
+    }
+    protected WebElement getNewPasswordTxt () {
+        return getTxtElement("newPassword");
+    }
+    protected WebElement getConfirmPasswordTxt () {
+        return getTxtElement("confirmPassword");
+    }
+    protected WebElement getBtnElement (String btnName) {
+        return Constant.WEBDRIVER.findElement(By.xpath(String.format("//input[@value ='%s']", btnName)));
+    }
+
 
     //Methods
     public String getWelcomeMessage () {
@@ -42,11 +64,13 @@ public class GeneralPage {
     public String getPageErrorMessage () {
         return this.getLblPageErrorMessage().getText().trim();
     }
-    protected boolean isDisplayed (WebElement element) {
+    public Strng getFieldErrorMessage (String field) {
+        return this.getLblFieldErrorMsg(field).geText().trim();
+    }
+    public boolean isDisplayed (WebElement element) {
         try {
             return element.isDisplayed();
         } catch (NoSuchElementException e) {
-            System.out.println("Here");
             return false;
         }
     }
@@ -56,11 +80,11 @@ public class GeneralPage {
     public String getPageTitle () {
         return this.getHPageTitle().getText();
     }
-    protected void enter (WebElement element, String value) {
+    public void enter (WebElement element, String value) {
         element.clear();
         element.sendKeys(value);
     }
-    protected void scroll (WebElement element) {
+    public void scroll (WebElement element) {
         ((JavascriptExecutor) Constant.WEBDRIVER).executeScript("argument[0].scrollIntoView(true);", element);
     }
 

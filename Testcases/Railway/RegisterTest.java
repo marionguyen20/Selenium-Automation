@@ -31,11 +31,11 @@ public class RegisterTest extends BaseTest {
                 .register(accountData);
 
         String expectedErrorMsg = "There're errors in the form. Please correct the errors and try again.";
-        String expectedPassErrorMsg = "Invalid password length";
-        String expectedPidErrorMsg = "Invalid ID length";
+        String expectedPassErrorMsg = "Invalid password length.";
+        String expectedPidErrorMsg = "Invalid ID length.";
 
         Assert.assertEquals(registerPage.getPageErrorMessage(), expectedErrorMsg, "Error Message is not match");
-        Assert.assertEquals(registerPage.getFieldErrorMsg("password"), expectedPassErrorMsg, "Error Password is not match");
-        Assert.assertEquals(registerPage.getFieldErrorMsg("pid"), expectedPidErrorMsg, "Error Pid is not match");
+        Assert.assertEquals(registerPage.getPasswordFieldError(), expectedPassErrorMsg, "Error Password is not match");
+        Assert.assertEquals(registerPage.getPidFieldError(), expectedPidErrorMsg, "Error Pid is not match");
     }
 }

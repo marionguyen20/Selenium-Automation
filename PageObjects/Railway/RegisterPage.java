@@ -9,40 +9,29 @@ import org.openqa.selenium.support.ui.WebDriverWait;
 public class RegisterPage extends GeneralPage {
 
     //Locator
-    private final By _txtEmail = By.id("email");
-    private final By _txtPassword = By.id("password");
-    private final By _txtCfPassword = By.id("confirmPassword");
-    private final By _pid = By.id("pid");
-    private final By _btnRegister = By.xpath("//p[@class = 'form-actions']//input[@value='Register']");
 
     //Elements
-    public WebElement getTxtEmail() {
-        return Constant.WEBDRIVER.findElement(_txtEmail);
-    }
 
-    public WebElement getTxtPassword() {
-        return Constant.WEBDRIVER.findElement(_txtPassword);
+    public WebElement getPidTxt () {
+        return getFieldErrorMsg("pid");
     }
-
-    public WebElement getTxtCfPassword() {
-        return Constant.WEBDRIVER.findElement(_txtCfPassword);
+    public WebElement getPasswordFieldError () {
+        return getFieldErrorMsg("password");
     }
-
-    public WebElement getPid() {
-        return Constant.WEBDRIVER.findElement(_pid);
+    public WebElement getPidFieldError () {
+        return getFieldErrorMsg("pid");
     }
-
-    public WebElement getBtnRegister() {
-        return Constant.WEBDRIVER.findElement(_btnRegister);
+    public WebElement getRegisterBtn () {
+        return getBtnElement("Register");
     }
-
+    
     //Methods
     public void submitRegisterForm(String email, String password, String pid) {
-        enter(this.getTxtEmail(), email);
-        enter(this.getTxtPassword(), password);
-        enter(this.getTxtCfPassword(), password);
-        enter(this.getPid(), pid);
-        this.getBtnRegister().submit();
+        enter(getEmailTxt(), email);
+        enter(getPasswordTxt(), password);
+        enter(getConfirmPasswordTxt(), password);
+        enter(getPidTxt(), pid);
+        getRegisterBtn().submit();
     }
 
     public RegisterPage register(AccountData accountData) {
