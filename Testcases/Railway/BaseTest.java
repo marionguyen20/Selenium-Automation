@@ -24,12 +24,12 @@ public class BaseTest {
         Constant.WEBDRIVER.quit();
     }
 
-    public void createAndActivateAccount (AccountData accountData) throws InterruptedException {
+    public void createAndActivateAccount (Account account) throws InterruptedException {
         //Create new account
         homePage
             .open()
             .gotoRegisterPage()
-            .register(accountData);
+            .register(account);
 
         //Activate Account
         LoginMailBoxPage loginMailBoxPage = new LoginMailBoxPage ();
@@ -37,7 +37,7 @@ public class BaseTest {
                 .open()
                 .loginMailBox(Constant.USERNAME_MAILBOX, Constant.PASSWORD_MAILBOX);
         
-        mailBoxPage.activateAccount(accountData.getEmail());
+        mailBoxPage.activateAccount(account.getEmail());
         Utilities.closeWindow();
     }
 }

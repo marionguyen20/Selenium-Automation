@@ -8,14 +8,14 @@ import org.testng.annotations.Test;
 
 public class ChangePasswordTest extends BaseTest {
     
-    AccountData accountData;
+    Account account;
     LoginPage loginPage;
 
     @BeforeMethod
     public void createAccount () throws InterruptedException {
         //Create new Account
-        accountData = new AccountData ();
-        createAndActivateAccount(accountData);
+        account = new Account ();
+        createAndActivateAccount(account);
     }
     
     @Test(description = "User can't change password when New Password and Confirm Password are different")
@@ -27,9 +27,9 @@ public class ChangePasswordTest extends BaseTest {
         ChangePasswordPage changePasswordPage = homePage
                 .open()
                 .gotoLoginPage()
-                .loginSucessToHomePage(accountData)
+                .loginSucessToHomePage(account)
                 .gotoChangePasswordPage()
-                .changePass(accountData.getPassword(), newPass, cfPass);
+                .changePass(account.getPassword(), newPass, cfPass);
 
         String expectedTitle = "Change password";
         String expectedPageErrorMsg = "Password change failed. Please correct the errors and try again.";
@@ -44,9 +44,9 @@ public class ChangePasswordTest extends BaseTest {
                 .open()
                 .gotoLoginPage()
                 .forgotPassword()
-                .sendInstruction(accountData.getEmail())
+                .sendInstruction(account.getEmail())
                 .loginMailBox(Constant.USERNAME_MAILBOX, Constant.PASSWORD_MAILBOX)
-                .resetPassword(accountData.getEmail());
+                .resetPassword(account.getEmail());
         Utilities.moveToCurrentWindow();
         return loginPage;
     }

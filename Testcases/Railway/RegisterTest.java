@@ -6,16 +6,16 @@ import org.testng.annotations.Test;
 
 public class RegisterTest extends BaseTest {
 
-    AccountData accountData;
+    Account account;
     RegisterPage registerPage;
 
     @Test (description = "TC07 - User can create new account")
     public void TC07 () {
-        accountData = new AccountData();
+        account = new Account();
         registerPage = homePage
                 .open()
                 .gotoRegisterPage()
-                .register(accountData);
+                .register(account);
 
         String expectedTitle = "Thank you for registering your account";
         Assert.assertEquals(registerPage.getPageTitle(), expectedTitle, "Title is not match");
@@ -23,12 +23,12 @@ public class RegisterTest extends BaseTest {
 
     @Test(description = "User can't create account while password and PID fields are empty")
     public void TC11 () {
-        accountData = new AccountData(Utilities.generateEmail(), "","");
+        account = new Account(Utilities.generateEmail(), "","");
 
         registerPage = homePage
                 .open()
                 .gotoRegisterPage()
-                .register(accountData);
+                .register(account);
 
         String expectedErrorMsg = "There're errors in the form. Please correct the errors and try again.";
         String expectedPassErrorMsg = "Invalid password length.";

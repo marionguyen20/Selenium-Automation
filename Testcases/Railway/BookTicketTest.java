@@ -6,13 +6,13 @@ import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
 
 public class BookTicketTest extends BaseTest {
-    AccountData accountData;
+    Account account;
 
     @BeforeMethod
     public void createAccount () throws InterruptedException {
         //Create new Account
-        accountData = new AccountData ();
-        createAndActivateAccount(accountData);
+        account= new Account ();
+        createAndActivateAccount(account);
     }
     @Test(description = "User can book many tickets at a time")
     public void TC14 () {

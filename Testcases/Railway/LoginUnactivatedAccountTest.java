@@ -6,15 +6,15 @@ import org.testng.annotations.Test;
 
 public class LoginUnactivatedAccountTest extends BaseTest {
     
-    AccountData accountData;
+    Account account;
 
     @BeforeMethod
     public void createAccount () {
-        accountData = new AccountData ();
+        account = new AccountData ();
         RegisterPage registerPage = homePage
                 .open()
                 .gotoRegisterPage()
-                .register(accountData);
+                .register(account);
     }
 
     @Test(description = "User can't login with an account hasn't been activated")
@@ -23,7 +23,7 @@ public class LoginUnactivatedAccountTest extends BaseTest {
         LoginPage loginPage = homePage
                 .open()
                 .gotoLoginPage()
-                .loginFail(accountData.getEmail(), accountData.getPassword());
+                .loginFail(account.getEmail(), account.getPassword());
 
         String expectedTitle = "Login page";
         String expectedMsg = "Invalid username or password. Please try again.";

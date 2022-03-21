@@ -5,21 +5,21 @@ import org.apache.commons.lang3.RandomStringUtils;
 
 import java.util.Random;
 
-public class AccountData {
+public class Account {
     private String email;
     private String password;
     private String pid;
 
-    public AccountData () {
+    public Account () {
         this.email = Utilities.generateEmail();
         this.password = Utilities.generatePassword();
         this.pid = Utilities.generatePid();
     }
-    public AccountData (String email, String password) {
+    public Account (String email, String password) {
         this.email = email;
         this.password = password;
     }
-    public AccountData (String email, String password, String pid) {
+    public Account (String email, String password, String pid) {
         this.email = email;
         this.password = password;
         this.pid = pid;

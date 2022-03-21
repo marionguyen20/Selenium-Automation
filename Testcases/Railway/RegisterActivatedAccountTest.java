@@ -6,13 +6,13 @@ import org.testng.annotations.Test;
 
 public class RegisterActivatedAccountTest extends BaseTest {
     
-    AccountData accountData;
+    Account account;
 
     @BeforeMethod
     public void createAccount () throws InterruptedException {
         //Create new Account
-        accountData = new AccountData ();
-        createAndActivateAccount(accountData);
+        account = new Account ();
+        createAndActivateAccount(account);
     }
 
     @Test(description = "User can't create account with an already in-use email")
@@ -20,7 +20,7 @@ public class RegisterActivatedAccountTest extends BaseTest {
         RegisterPage registerPage = homePage
                 .open()
                 .gotoRegisterPage()
-                .register(accountData);
+                .register(account);
         
         String expectedErrorMsg = "This email address is already in use.";
         Assert.assertEquals(registerPage.getPageErrorMessage(), expectedErrorMsg, "Error Message is not match");
