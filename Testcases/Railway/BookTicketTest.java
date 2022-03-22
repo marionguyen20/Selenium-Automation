@@ -16,23 +16,22 @@ public class BookTicketTest extends BaseTest {
     }
     @Test(description = "User can book many tickets at a time")
     public void TC14 () {
-        BookTicketPage bookTicketPage = homePage
+
+        Ticket ticket = new Ticket(Utilities.random(3, 30), 
+                Province.NHA_TRANG, 
+                Province.PHAN_THIET, 
+                eatType.SOFT_BED_WITH_AIR_CONDITIONER, 
+                5);
+        TicketBookedSuccessPage ticketBookedSuccessPage = homePage
                 .open()
                 .gotoLoginPage()
-                .loginSucessToHomePage(Constant.DEFAULT_ACCOUNT)
-                .gotoBookTicketPageLogin();
+                .loginSucessToHomePage(account)
+                .gotoBookTicketPageLogin()
+                .bookTicket(ticket);
 
-        String depart = "Nha Trang";
-        String arrive = "Sài Gòn";
-        String seatType = "Soft seat with air conditioner";
-        int ticketAmount = 5;
-        bookTicketPage.bookTicket("",depart, arrive, seatType, ticketAmount);
+        Assert.assertEquals(ticketBookedSuccessPage.getPageTitle(), "Ticket booked successfully!");
 
-        Assert.assertEquals(bookTicketPage.getPageTitle(), "Ticket booked successfully!");
-        Assert.assertEquals(bookTicketPage.getTableInformation(2), depart);
-        Assert.assertEquals(bookTicketPage.getTableInformation(3), arrive);
-        Assert.assertEquals(bookTicketPage.getTableInformation(4), seatType);
-        Assert.assertEquals(bookTicketPage.getTableInformation(5), String.valueOf(ticketAmount));
+        Assert.assertEquals(ticketBookedSuccessPage.getBookedTicket().toString(), ticket.toString());
 
     }
 }

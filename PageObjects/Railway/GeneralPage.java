@@ -87,6 +87,17 @@ public class GeneralPage {
     public void scroll (WebElement element) {
         ((JavascriptExecutor) Constant.WEBDRIVER).executeScript("argument[0].scrollIntoView(true);", element);
     }
+    public void select (WebElement element, String text) {
+        Select selectElement = new Select (element);
+        selectElement.selectByVisibleText(text);
+    }
+    public void waitForElementStaleness (WebElement element) {
+        try {
+            WebDriverWait wdw = new WebDriverWait(Constant.WEBDRIVER, Duration.ofSeconds(2));
+            wdw.until(ExpectedConditions.stalenessOf(element));
+        }
+        catch (Exception e) {}
+    }
 
     //Go to Page methods
     public LoginPage gotoLoginPage () {

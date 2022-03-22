@@ -47,5 +47,16 @@ public class Utilities {
         Constant.WEBDRIVER.close();
         Constant.WEBDRIVER.switchTo().window(originalWindow);
     }
+    public static LocalDate getDate (int days) {
+        LocalDate today = LocalDate.now();
+        LocalDate date = today.plusDays(days);
+        return date;
+    }
+    public static LocalDate random (int from, int to) {
+        LocalDate today = LocalDate.now();
+        Random rd = new Random ();
+        LocalDate date  = today.plusDays(rd.nextInt(to - from));
+        return date;
+    }
 
 }

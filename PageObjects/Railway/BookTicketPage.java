@@ -14,8 +14,23 @@ public class BookTicketPage extends GeneralPage {
     public WebElement getFormBookTicket () {
         return Constant.WEBDRIVER.findElement(_formBookTicket);
     }
-    public WebElement getContainSelectionBox (String field, String contain) {
-        return Constant.WEBDRIVER.findElement(By.xpath(String.format("//form//select[@name='%s']//option[contains(text(), '%s')]", field, contain)));
+    public WebElement getBookTicketElement (String name) {
+        return Constant.WEBDRIVER.findElement(By.xpath(String.format("//form//select[@name='%s']", name)));
+    }
+    public WebElement getDepartDateCbb () {
+        return getBookTicketElement ("Date");
+    }
+    public WebElement getDepartFromCbb () {
+        return getBookTicketElement("DepartStation");
+    }
+    public WebElement getArriveAtCbb () {
+        return getBookTicketElement("ArriveStation");
+    }
+    public WebElement getSeatTypeCbb () {
+        return getBookTicketElement("SeatType");
+    }
+    public WebElement getTicketAmountCbb () {
+        return getBookTicketElement("TicketAmount");
     }
     public WebElement getBtnBookTicket () {
         return Constant.WEBDRIVER.findElement(_btnBookTicket);
@@ -28,17 +43,19 @@ public class BookTicketPage extends GeneralPage {
     public boolean checkFormBookTicketDisplayed () {
         return isDisplayed(this.getFormBookTicket());
     }
-    public void selectContainSelectionBox (String field, String contain) {
-        this.getContainSelectionBox(field, contain).click();
-    }
-    public BookTicketPage bookTicket (String departDate, String depart, String arrive, String seatType, int ticketAmount){
-        if (!departDate.equals("")) selectContainSelectionBox("Date", departDate);
-        if (!departDate.equals("")) selectContainSelectionBox("DepartStation", depart);
-        if (!departDate.equals("")) selectContainSelectionBox("ArriveStation", arrive);
-        if (!departDate.equals("")) selectContainSelectionBox("SeatType", seatType);
-        if (!departDate.equals("")) selectContainSelectionBox("TicketAmount", String.valueOf(ticketAmount));
-        this.getBtnBookTicket().submit();
-        return this;
+
+    public TicketBookedSuccessPage bookTicket (Ticket ticket){
+        select(getDepartDateCbb(), ticket.getDepartDate().format(DateTimeFormatter.ofPattern("M/d/yyyy")));
+        select(getDepartFromCbb(), ticket.getDepartFrom());
+
+        waitForElementStaleness(getArriveAtCbb());
+        select(getArriveAtCbb(), ticket.getArriveAt());
+
+        select(getSeatTypeCbb(), ticket.getSeatType());
+        select(getTicketAmountCbb(), String.valueOf(ticket.getTicketAmount()));
+        getBtnBookTicket().click();
+        return new TicketBookedSuccessPage ();
+
     }
     public String getTableInformation (int index) {
         return this.getTableCell(index).getText();
