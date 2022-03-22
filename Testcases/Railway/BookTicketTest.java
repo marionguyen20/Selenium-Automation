@@ -1,9 +1,11 @@
 package Railway;
 
-import Constant.Constant;
 import org.testng.Assert;
 import org.testng.annotations.BeforeMethod;
 import org.testng.annotations.Test;
+import Enum.*;
+import Utilities.*;
+
 
 public class BookTicketTest extends BaseTest {
     Account account;
@@ -17,10 +19,10 @@ public class BookTicketTest extends BaseTest {
     @Test(description = "User can book many tickets at a time")
     public void TC14 () {
 
-        Ticket ticket = new Ticket(Utilities.random(3, 30), 
+        Ticket ticket = new Ticket(Utilities.random(3, 30),
                 Province.NHA_TRANG, 
                 Province.PHAN_THIET, 
-                eatType.SOFT_BED_WITH_AIR_CONDITIONER, 
+                SeatType.SOFT_BED_WITH_AIR_CONDITIONER,
                 5);
         TicketBookedSuccessPage ticketBookedSuccessPage = homePage
                 .open()

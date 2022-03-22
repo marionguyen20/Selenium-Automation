@@ -1,4 +1,7 @@
-package DataObjects.enum;
+package Enum;
+
+import java.util.Random;
+
 
 public enum Province {
     DA_NANG("Đà Nẵng"),

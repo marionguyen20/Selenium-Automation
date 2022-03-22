@@ -1,3 +1,14 @@
+package Railway;
+
+import java.time.LocalDate;
+import java.time.format.DateTimeFormatter;
+import java.util.Random;
+
+import Utilities.Utilities;
+import Utilities.DataHelper;
+import Enum.Province;
+import Enum.SeatType;
+
 public class Ticket {
     LocalDate departDate;
     String departFrom;
@@ -8,12 +19,12 @@ public class Ticket {
     public Ticket () {
         this.departDate = Utilities.random(3, 30);
         Province depart = Province.random();
-        this.departFrom = DataHelper.getArriveAt(depart).getLocation();
-        this.arriveAt = arriveAt.getLocation();
+        this.departFrom = depart.getLocation();
+        this.arriveAt = DataHelper.getArriveAt(depart).getLocation();
         this.seatType = SeatType.random().getValue();
         this.ticketAmount = new Random().nextInt(10) + 1;
     }
-    public Ticket (LocalDate departDate,  Province departFrom, Province arriveAt, String seatType, int ticketAmount) {
+    public Ticket (LocalDate departDate,  Province departFrom, Province arriveAt, SeatType seatType, int ticketAmount) {
         this.departDate = departDate;
         this.departFrom = departFrom.getLocation();
         this.arriveAt = arriveAt.getLocation();

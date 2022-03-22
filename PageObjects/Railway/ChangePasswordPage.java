@@ -1,7 +1,5 @@
 package Railway;
 
-import Constant.Constant;
-import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 
 public class ChangePasswordPage extends GeneralPage {
@@ -12,13 +10,13 @@ public class ChangePasswordPage extends GeneralPage {
     protected WebElement getChangePasswordBtn () {
         return getBtnElement("Change Password");
     }
-    protected WebElement getCurrentPassword () {
+    protected WebElement getCurrentPasswordTxt () {
         return getTxtElement("currentPassword");
     }
     
     //Methods
     protected void submitChangePassForm (String currentPass, String newPass, String cfPass) {
-        enter(getCurrentPassTxt(), currentPass);
+        enter(getCurrentPasswordTxt(), currentPass);
         enter(getNewPasswordTxt(), newPass);
         enter(getConfirmPasswordTxt (), cfPass);
         this.getChangePasswordBtn().submit();

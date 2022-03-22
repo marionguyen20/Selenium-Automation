@@ -1,4 +1,6 @@
-package DataObjects.enum;
+package Enum;
+
+import java.util.Random;
 
 public enum SeatType {
     HARD_SEAT ("Hard seat"),

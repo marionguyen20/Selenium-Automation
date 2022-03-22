@@ -13,13 +13,13 @@ public class RegisterPage extends GeneralPage {
     //Elements
 
     public WebElement getPidTxt () {
-        return getFieldErrorMsg("pid");
+        return getLblFieldErrorMsg("pid");
     }
     public WebElement getPasswordFieldError () {
-        return getFieldErrorMsg("password");
+        return getLblFieldErrorMsg("password");
     }
     public WebElement getPidFieldError () {
-        return getFieldErrorMsg("pid");
+        return getLblFieldErrorMsg("pid");
     }
     public WebElement getRegisterBtn () {
         return getBtnElement("Register");
@@ -34,8 +34,8 @@ public class RegisterPage extends GeneralPage {
         getRegisterBtn().submit();
     }
 
-    public RegisterPage register(AccountData accountData) {
-        submitRegisterForm(accountData.getEmail(), accountData.getPassword(), accountData.getPid());
+    public RegisterPage register(Account account) {
+        submitRegisterForm(account.getEmail(), account.getPassword(), account.getPid());
         return this;
     }
 }

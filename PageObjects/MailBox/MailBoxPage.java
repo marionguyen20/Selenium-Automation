@@ -2,7 +2,6 @@ package MailBox;
 
 import Constant.Constant;
 import Railway.LoginPage;
-import Railway.RegisterPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.WebElement;
 import org.openqa.selenium.support.ui.ExpectedConditions;

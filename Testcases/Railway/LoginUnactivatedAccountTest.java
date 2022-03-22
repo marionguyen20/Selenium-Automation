@@ -10,7 +10,7 @@ public class LoginUnactivatedAccountTest extends BaseTest {
 
     @BeforeMethod
     public void createAccount () {
-        account = new AccountData ();
+        account = new Account ();
         RegisterPage registerPage = homePage
                 .open()
                 .gotoRegisterPage()

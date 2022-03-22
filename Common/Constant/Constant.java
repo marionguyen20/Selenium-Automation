@@ -1,6 +1,6 @@
 package Constant;
 
-import Railway.AccountData;
+import Railway.Account;
 import org.openqa.selenium.WebDriver;
 
 public class Constant {
@@ -11,7 +11,7 @@ public class Constant {
     public static final String PASSWORD_MAILBOX = "Logigear123!!";
     public static final String USERNAME = "thanh.nguyen@gmail.com";
     public static final String PASSWORD = "12345678";
-    public static final AccountData DEFAULT_ACCOUNT = new AccountData(USERNAME, PASSWORD);
+    public static final Account DEFAULT_ACCOUNT = new Account(USERNAME, PASSWORD);
 
     public static final long TIMEOUT = 30;
 }

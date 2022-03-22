@@ -33,7 +33,7 @@ public class LoginPage extends GeneralPage {
         return getBtnElement("Send Instructions");
     }
     protected WebElement getResetTokenFieldError () {
-        return getFieldErrorMsg("resetToken")
+        return getLblFieldErrorMsg("resetToken");
     }
 
     //Methods
@@ -44,9 +44,9 @@ public class LoginPage extends GeneralPage {
         this.getLoginBtn().click();
     }
     //Login Method return Homepage
-    public HomePage loginSucessToHomePage(AccountData accountData) {
+    public HomePage loginSucessToHomePage(Account account) {
         //Login
-        this.submitLoginForm(accountData.getEmail(), accountData.getPassword());
+        this.submitLoginForm(account.getEmail(), account.getPassword());
         //Land on Home Page
         return new HomePage();
     }

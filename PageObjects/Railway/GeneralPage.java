@@ -1,11 +1,15 @@
 package Railway;
 
 import Constant.Constant;
-import MailBox.MailBoxPage;
 import org.openqa.selenium.By;
 import org.openqa.selenium.JavascriptExecutor;
 import org.openqa.selenium.NoSuchElementException;
 import org.openqa.selenium.WebElement;
+import org.openqa.selenium.support.ui.ExpectedConditions;
+import org.openqa.selenium.support.ui.Select;
+import org.openqa.selenium.support.ui.WebDriverWait;
+
+import java.time.Duration;
 
 
 // class contains all general UI elements and methods that shared across other pages (Login, Logout)
@@ -26,7 +30,7 @@ public class GeneralPage {
         return Constant.WEBDRIVER.findElement(By.xpath(String.format(_errorTemplate, field)));
     }
     protected WebElement getConfirmPassFieldError () {
-        return getFieldErrorMsg("confirmPassword");
+        return getLblFieldErrorMsg("confirmPassword");
     }
     protected WebElement getLblWelcomeMessage () {
         return Constant.WEBDRIVER.findElement(lblWelcomeMessage);
@@ -37,7 +41,7 @@ public class GeneralPage {
     protected WebElement getHPageTitle () {
         return Constant.WEBDRIVER.findElement(hPageTitle);
     }
-        public WebElement getTxtElement (String txtName) {
+    protected WebElement getTxtElement (String txtName) {
         return Constant.WEBDRIVER.findElement(By.id(txtName));
     }
     protected WebElement getEmailTxt () {
@@ -64,8 +68,8 @@ public class GeneralPage {
     public String getPageErrorMessage () {
         return this.getLblPageErrorMessage().getText().trim();
     }
-    public Strng getFieldErrorMessage (String field) {
-        return this.getLblFieldErrorMsg(field).geText().trim();
+    public String getFieldErrorMessage (String field) {
+        return this.getLblFieldErrorMsg(field).getText().trim();
     }
     public boolean isDisplayed (WebElement element) {
         try {
@@ -127,9 +131,6 @@ public class GeneralPage {
     public HomePage logout () {
         this.getTab("Log out").click();
         return new HomePage();
-    }
-    public String getFieldErrorMsg (String field) {
-        return this.getLblFieldErrorMsg(field).getText();
     }
 }
 

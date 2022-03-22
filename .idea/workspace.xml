@@ -2,10 +2,23 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8464f5a8-aad4-4269-bf45-5f2a1d4f9ff1" name="Default Changelist" comment="">
-      <change afterPath="$PROJECT_DIR$/Testcases/Railway/BookTicketTest.java" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/.idea/uiDesigner.xml" afterDir="false" />
+      <change afterPath="$PROJECT_DIR$/DataObjects/Enum/Province.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Constant/Constant.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Constant/Constant.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Utilities/DataHelper.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Utilities/DataHelper.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Common/Utilities/Utilities.java" beforeDir="false" afterPath="$PROJECT_DIR$/Common/Utilities/Utilities.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataObjects/Railway/Ticket.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataObjects/Railway/Ticket.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataObjects/enum/Province.java" beforeDir="false" />
+      <change beforePath="$PROJECT_DIR$/DataObjects/enum/SeatType.java" beforeDir="false" afterPath="$PROJECT_DIR$/DataObjects/Enum/SeatType.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObjects/MailBox/MailBoxPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/MailBox/MailBoxPage.java" afterDir="false" />
       <change beforePath="$PROJECT_DIR$/PageObjects/Railway/BookTicketPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/BookTicketPage.java" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Testcases/Railway/ChangePasswordTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/ChangePasswordTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/ChangePasswordPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/ChangePasswordPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/GeneralPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/GeneralPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/LoginPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/LoginPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/PageObjects/Railway/RegisterPage.java" beforeDir="false" afterPath="$PROJECT_DIR$/PageObjects/Railway/RegisterPage.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testcases/Railway/BookTicketTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/BookTicketTest.java" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Testcases/Railway/LoginUnactivatedAccountTest.java" beforeDir="false" afterPath="$PROJECT_DIR$/Testcases/Railway/LoginUnactivatedAccountTest.java" afterDir="false" />
     </list>
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -39,6 +52,7 @@
   <component name="PropertiesComponent">
     <property name="RunOnceActivity.ShowReadmeOnStart" value="true" />
     <property name="SHARE_PROJECT_CONFIGURATION_FILES" value="true" />
+    <property name="last_directory_selection" value="$PROJECT_DIR$/DataObjects" />
     <property name="project.structure.last.edited" value="Modules" />
     <property name="project.structure.proportion" value="0.15" />
     <property name="project.structure.side.proportion" value="0.2" />
@@ -538,7 +552,14 @@
       <option name="project" value="LOCAL" />
       <updated>1647310734871</updated>
     </task>
-    <option name="localTasksCounter" value="2" />
+    <task id="LOCAL-00002" summary="Update TCs">
+      <created>1647316964214</created>
+      <option name="number" value="00002" />
+      <option name="presentableId" value="LOCAL-00002" />
+      <option name="project" value="LOCAL" />
+      <updated>1647316964214</updated>
+    </task>
+    <option name="localTasksCounter" value="3" />
     <servers />
   </component>
   <component name="Vcs.Log.Tabs.Properties">
@@ -631,10 +652,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="622" y="456" key="#com.intellij.refactoring.move.MoveHandler.SelectRefactoringDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1646230475526" />
-    <state x="573" y="46" key="CommitChangelistDialog2" timestamp="1647310732361">
+    <state x="573" y="46" key="CommitChangelistDialog2" timestamp="1647316962477">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
-    <state x="573" y="46" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1647310732361" />
+    <state x="573" y="46" key="CommitChangelistDialog2/0.0.1920.1080@0.0.1920.1080" timestamp="1647316962477" />
     <state x="740" y="294" key="FileChooserDialogImpl" timestamp="1646457557336">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -679,6 +700,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="440" y="114" key="SettingsEditor/0.0.1920.1080@0.0.1920.1080" timestamp="1646457451657" />
+    <state x="776" y="317" key="chooseDestDirectoryDialog" timestamp="1647931793415">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="776" y="317" key="chooseDestDirectoryDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1647931793415" />
     <state x="92" y="92" width="1736" height="896" key="dock-window-1" timestamp="1646475028535">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
@@ -687,6 +712,10 @@
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
     <state x="342" y="146" key="new project wizard/0.0.1920.1080@0.0.1920.1080" timestamp="1646226679007" />
+    <state x="669" y="164" key="refactoring.ChangeSignatureDialog" timestamp="1647932451139">
+      <screen x="0" y="0" width="1920" height="1080" />
+    </state>
+    <state x="669" y="164" key="refactoring.ChangeSignatureDialog/0.0.1920.1080@0.0.1920.1080" timestamp="1647932451139" />
     <state x="623" y="235" width="672" height="678" key="search.everywhere.popup" timestamp="1646651963174">
       <screen x="0" y="0" width="1920" height="1080" />
     </state>
