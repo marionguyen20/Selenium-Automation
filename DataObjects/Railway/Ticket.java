@@ -6,7 +6,12 @@ public class Ticket {
     int ticketAmount;
 
     public Ticket () {
-
+        this.departDate = Utilities.random(3, 30);
+        Province depart = Province.random();
+        this.departFrom = DataHelper.getArriveAt(depart).getLocation();
+        this.arriveAt = arriveAt.getLocation();
+        this.seatType = SeatType.random().getValue();
+        this.ticketAmount = new Random().nextInt(10) + 1;
     }
     public Ticket (LocalDate departDate,  Province departFrom, Province arriveAt, String seatType, int ticketAmount) {
         this.departDate = departDate;

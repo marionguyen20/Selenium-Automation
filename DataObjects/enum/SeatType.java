@@ -15,4 +15,7 @@ public enum SeatType {
     SeatType (String value) {
         this.value = value;
     }
+    public static SeatType random () {
+        return SeatType.values()[new Random().nextInt(SeatType.values().length)];
+    }
 }

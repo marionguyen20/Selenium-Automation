@@ -53,7 +53,7 @@ public class BookTicketPage extends GeneralPage {
 
         select(getSeatTypeCbb(), ticket.getSeatType());
         select(getTicketAmountCbb(), String.valueOf(ticket.getTicketAmount()));
-        getBtnBookTicket().click();
+        getBtnBookTicket().submit();
         return new TicketBookedSuccessPage ();
 
     }

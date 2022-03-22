@@ -15,4 +15,7 @@ public enum Province {
     Province(String location){
         this.location = location;
     }
+    public static Province random () {
+        return Province.values()[new Random().nextInt(Province.values().length)];
+    }
 }
