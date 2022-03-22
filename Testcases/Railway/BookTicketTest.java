@@ -34,4 +34,8 @@ public class BookTicketTest extends BaseTest {
         Assert.assertEquals(ticketBookedSuccessPage.getBookedTicket().toString(), ticket.toString());
 
     }
+    @Test (description = " \"Ticket price \" page displays with ticket details after clicking on \"check price\" link in \"Train timetable\" page")
+    public void TC15 () {
+        
+    }
 }
